@@ -1,0 +1,446 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+}
+
+.page{
+    width: 100%;
+    height: 100%;
+    /* background-color: antiquewhite; */
+}
+.nav1{
+    width: 100%;
+    height: 5vh;
+    background-color: #f0e3e7;
+    display: flex;
+    align-items: center;
+    overflow-x: hidden;
+}
+.nav1>h4{
+    animation: scroll 10s infinite linear;
+    margin-left: -38%;
+}
+@keyframes scroll { 
+    form{
+        transform: translateX(-100%);
+    }
+    to{
+        transform: translateX(350%);
+    }
+
+}
+
+.nav2{
+    width: 100%;
+    height: 10vh;
+    background-color: whitesmoke;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav2>ul{
+    display: flex;
+    gap: 5vmax;
+    list-style: none;
+    font-size: 1.4vmax;
+    padding: 0 2vmax;
+
+}
+.nav2>ul>li:hover{
+    font-weight: 600;
+    cursor: pointer;
+}
+.nav2>.logo{
+    width: 15%;
+    height: 10vh;
+    background-image: url(https://www.brandbucket.com/sites/default/files/logo_uploads/484738/large_smartserum.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.mid{
+    width: 100%;
+    height: 85vh;
+    /* background-color: #f09ab3; */
+    display: flex;
+}
+.left{
+    width: 50%;
+    height: 85vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-image: linear-gradient(#f5a1b9,#ef99b2,#ef97b0);
+    /* background-image: linear-gradient(#f4a0b8,#f197b5,#ed94b0); */
+}
+.left>h1>span{
+    font-size: 4vmax;
+    font-family: 'Courier New', Courier, monospace;
+    
+    /* color: transparent; */
+    /* -webkit-text-stroke: 3px black; */
+    
+    margin-bottom: 2vmax;
+}
+.left>h1>span:hover{
+    cursor: default;
+    background: -webkit-repeating-linear-gradient(rgb(191, 0, 255),rgb(115, 1, 73));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    
+}
+.left>h4{
+    font-size: 2vmax;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-bottom: 2vmax;
+
+}
+.left>button{
+    padding: 1vmax 2vmax;
+    background-color: transparent;
+    transition: 1s ease-in-out;
+}
+.left>button:hover{
+
+    border: none;
+    padding: 1vmax 2vmax;
+    background-color: rgb(18, 18, 18);
+    color: whitesmoke;
+    font-weight: 600;
+    border-radius: 10px;
+    border: 1px solid transparent;
+    box-shadow: inset 200px 0 0 0 black;
+}
+
+.right{
+    width: 50%;
+    height: 85vh;
+    background-image: url(https://img.freepik.com/free-photo/short-hair-asian-young-beautiful-woman-applying-cosmetic-powder-brush_1150-13016.jpg?t=st=1697732420~exp=1697733020~hmac=175529c30f1763c388ba6ee80e3b028913d45191eadb7fe6bf35887837d44cf8);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    /* mix-blend-mode:luminosity ; */
+}
+
+.page2{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+}
+.lefti{
+    width: 50%;
+    height: 100vh;
+    background-color: #e3e3e3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+.lefti>h1{
+    font-size: 4vmax;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-bottom: 1vmax;
+    font-weight: 600;
+
+}
+.lefti>p{
+    font-size: 1.5vmax;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-bottom: 1vmax;
+}
+.lefti>button{
+    padding: 1vmax 2vmax;
+    background-color: transparent;
+    font-size: 1.2vmax;
+     transition: 1s ease-in-out;    
+}
+.lefti>button:hover{
+
+    border: none;
+    padding: 1vmax 2vmax;
+    background-color: rgb(18, 18, 18);
+    color: whitesmoke;
+    font-weight: 600;
+    border-radius: 10px;
+    border: 1px solid transparent;
+    box-shadow: inset 200px 0 0 0 black;
+}
+.righti{
+    width: 50%;
+    height: 100vh;
+    background-color: #e3e3e3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.righti>.pic{
+    width: 70%;
+    height: 90vh;
+    background-image: url(https://media.istockphoto.com/id/1352842721/photo/cropped-shot-of-a-young-beautiful-woman-applying-serum-to-her-face.jpg?s=612x612&w=0&k=20&c=s0Jprpv1Rg8jFhc4lKF5k8R8QXPex3EVg3cinBogvqc=);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-top-right-radius: 2vw;
+    border-bottom-left-radius:2vw;
+    /* border-bottom-right-radius: 1vw; */
+    transition: 1s ease-in;
+}
+.righti>.pic:hover{
+    width: 70%;
+    height: 90vh;
+    cursor: pointer;
+
+    background-image: url(https://media.istockphoto.com/id/1331055861/photo/close-up-portrait-young-beautiful-caucasian-woman-in-black-clothes-isolated-over-brown-studio.jpg?s=612x612&w=0&k=20&c=b4S3VIBzfuuDmj7B0lrxcSoxCgcqCVxyphhZucDvgYQ=);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-top-left-radius:2vw;
+    border-bottom-right-radius:2vw;
+    border-top-right-radius: 0vw;
+    border-bottom-left-radius:0vw;
+
+}
+.page3{
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    justify-content: space-evenly;
+    /* background-color: #dcb4bf; */
+    background-image: linear-gradient(#ef98b1,#ef98b1);
+    align-items: center;
+}
+.box{
+    width: 25%;
+    height: 60vh;
+    background-color: #ee88a5;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    overflow: hidden;
+}
+.piic1{
+    width: 100%;
+    height: 45vh;
+    background-image: url(https://us.123rf.com/450wm/liudmilachernetska/liudmilachernetska2308/liudmilachernetska230812485/209950712-flat-lay-composition-with-rose-essential-oil-and-flowers-on-pink-background.jpg?ver=6);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 1vmax 2vmax;
+    /* margin-bottom: ; */
+    transition: 1s ease;
+}
+.piic1:hover{
+    transform: scale(1.1);
+}
+.piic1>i{
+    font-size: 2vmax;
+    position: absolute;
+    
+}
+/* .piic1>i:hover{
+    background-color: red;
+    
+} */
+.piic2{
+    width: 100%;
+    height: 45vh;
+    background-image: url(https://img.freepik.com/premium-photo/home-treatment-concept-skin-care-products-tools-face-serum-quartz-roller-pink-background_105596-4282.jpg?w=2000);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 1vmax 2vmax;
+    transition: 1s ease;
+    /* mix-blend-mode:multiply; */
+}
+.piic2:hover{
+    transform: scale(1.1);
+}
+.piic2>i{
+    font-size: 2vmax;
+}
+.piic3{
+    width: 100%;
+    height: 45vh;
+    background-image: url(https://media.istockphoto.com/id/1299220589/photo/gold-beauty-serum-in-a-pipette-bottle-on-a-pink-podium-with-shadows.jpg?s=612x612&w=0&k=20&c=rj0OlNc68f2NVcMMNKyQyJ8-VVZS4j5ekTz6V7zcpjQ=);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 1vmax 2vmax;
+    /* margin-bottom: ; */
+    transition: 1s ease;
+}
+.piic3:hover{
+    transform: scale(1.1);
+}
+.piic3>i{
+    font-size: 2vmax;
+}
+.cont{
+    width: 100%;
+    height: 25%;
+    border: .1vmax solid rgb(59, 59, 59);
+    padding: 1vmax 6vmax;
+    /* border-bottom: .1vmax solid #f0dfe3; */
+/* background-color: #fff; */
+}
+.cont>h4{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.cont>P{
+    font-family:'Times New Roman', Times, serif;
+
+}
+.page4{
+    width: 100%;
+    height: 100vh;
+
+}
+.pic{
+    width: 100%;
+    height: 70vh;
+    background-image: url(https://www.asianbeautyx.com/cdn/shop/articles/Look-Out-For-These-8-Common-Skincare-Ingredient_1200x960_crop_center.jpg?v=1644993247);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+}
+.sed{
+    width: 100%;
+    height: 30vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ef98b1;
+}
+.sed>h2{
+    font-size: 3vw;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 600;
+    /* color: #e3e3e3; */
+
+}
+.page5{
+    width: 100%;
+    height: 100vh;
+
+}
+.top{
+    width: 100%;
+    height: 50vh;
+    background-color: #ef98b1;
+    display: flex;
+    border-top: 1px solid black;
+
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.top>h2{
+    font-size: 3vmax;
+    margin-bottom: 2vmax;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 500;
+}
+.top>button{
+    padding: 1vmax 6vmax;
+    background-color: #f0d9e5;
+    transition: 1s ease-in;
+
+}
+.top>button:hover{
+
+    border: none;
+    padding: 1vmax 6vmax;
+    background-color: rgb(18, 18, 18);
+    color: whitesmoke;
+    font-weight: 600;
+    border-radius: 10px;
+    border: 1px solid transparent;
+    box-shadow: inset 200px 0 0 0 black;
+}
+.btm{
+    width: 100%;
+    height: 50vh;
+    /* background-image: linear-gradient(#ef98b1,#2c2c2c,#000000); */
+    /* border-top: 1px solid black; */
+    background-color: rgb(32, 29, 29);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+.logi{
+    width: 20%;
+    height: 30vh;
+    /* background-color: #e3e3e3; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.loogo{
+    width: 90%;
+    height: 40vh;
+    background-image: url(https://www.brandbucket.com/sites/default/files/logo_uploads/484738/large_smartserum.png);
+    /* background-image: url(https://dynamic.brandcrowd.com/asset/logo/bc3e58ef-caac-4835-8966-42d78d5ab935/logo-search-grid-1x?logoTemplateVersion=1&v=638049686405270000&text=smart+serum&colorpalette=pink); */
+    mix-blend-mode: lighten;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    
+}
+.abt{
+    width: 25%;
+    height: 40vh;
+    /* background-color: #e3e3e3; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.abt>h5{
+    font-size: 1.4vmax;
+    margin-bottom: 1vmax;
+    color: whitesmoke;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.abt>ul{
+    list-style: none;
+    font-size: 1.3vmax;
+    color: whitesmoke;
+}
+.abt>ul>li>.ri-whatsapp-line:hover{
+    cursor:url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M7.25361 18.4944L7.97834 18.917C9.18909 19.623 10.5651 20 12.001 20C16.4193 20 20.001 16.4183 20.001 12C20.001 7.58172 16.4193 4 12.001 4C7.5827 4 4.00098 7.58172 4.00098 12C4.00098 13.4363 4.37821 14.8128 5.08466 16.0238L5.50704 16.7478L4.85355 19.1494L7.25361 18.4944ZM2.00516 22L3.35712 17.0315C2.49494 15.5536 2.00098 13.8345 2.00098 12C2.00098 6.47715 6.47813 2 12.001 2C17.5238 2 22.001 6.47715 22.001 12C22.001 17.5228 17.5238 22 12.001 22C10.1671 22 8.44851 21.5064 6.97086 20.6447L2.00516 22ZM8.39232 7.30833C8.5262 7.29892 8.66053 7.29748 8.79459 7.30402C8.84875 7.30758 8.90265 7.31384 8.95659 7.32007C9.11585 7.33846 9.29098 7.43545 9.34986 7.56894C9.64818 8.24536 9.93764 8.92565 10.2182 9.60963C10.2801 9.76062 10.2428 9.95633 10.125 10.1457C10.0652 10.2428 9.97128 10.379 9.86248 10.5183C9.74939 10.663 9.50599 10.9291 9.50599 10.9291C9.50599 10.9291 9.40738 11.0473 9.44455 11.1944C9.45903 11.25 9.50521 11.331 9.54708 11.3991C9.57027 11.4368 9.5918 11.4705 9.60577 11.4938C9.86169 11.9211 10.2057 12.3543 10.6259 12.7616C10.7463 12.8783 10.8631 12.9974 10.9887 13.108C11.457 13.5209 11.9868 13.8583 12.559 14.1082L12.5641 14.1105C12.6486 14.1469 12.692 14.1668 12.8157 14.2193C12.8781 14.2457 12.9419 14.2685 13.0074 14.2858C13.0311 14.292 13.0554 14.2955 13.0798 14.2972C13.2415 14.3069 13.335 14.2032 13.3749 14.1555C14.0984 13.279 14.1646 13.2218 14.1696 13.2222V13.2238C14.2647 13.1236 14.4142 13.0888 14.5476 13.097C14.6085 13.1007 14.6691 13.1124 14.7245 13.1377C15.2563 13.3803 16.1258 13.7587 16.1258 13.7587L16.7073 14.0201C16.8047 14.0671 16.8936 14.1778 16.8979 14.2854C16.9005 14.3523 16.9077 14.4603 16.8838 14.6579C16.8525 14.9166 16.7738 15.2281 16.6956 15.3913C16.6406 15.5058 16.5694 15.6074 16.4866 15.6934C16.3743 15.81 16.2909 15.8808 16.1559 15.9814C16.0737 16.0426 16.0311 16.0714 16.0311 16.0714C15.8922 16.159 15.8139 16.2028 15.6484 16.2909C15.391 16.428 15.1066 16.5068 14.8153 16.5218C14.6296 16.5313 14.4444 16.5447 14.2589 16.5347C14.2507 16.5342 13.6907 16.4482 13.6907 16.4482C12.2688 16.0742 10.9538 15.3736 9.85034 14.402C9.62473 14.2034 9.4155 13.9885 9.20194 13.7759C8.31288 12.8908 7.63982 11.9364 7.23169 11.0336C7.03043 10.5884 6.90299 10.1116 6.90098 9.62098C6.89729 9.01405 7.09599 8.4232 7.46569 7.94186C7.53857 7.84697 7.60774 7.74855 7.72709 7.63586C7.85348 7.51651 7.93392 7.45244 8.02057 7.40811C8.13607 7.34902 8.26293 7.31742 8.39232 7.30833Z"></path></svg>'),auto;
+    font-weight: 600;
+    color: whitesmoke;
+
+}
+.abt>.so{
+    display: flex;
+    gap: 2vmax;
+    font-size: 2.5vmax;
+    color: whitesmoke;
+}
+.abt>ul>li>.ri-facebook-circle-line:hover{
+    cursor:url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13.001 19.9381C16.9473 19.446 20.001 16.0796 20.001 12C20.001 7.58172 16.4193 4 12.001 4C7.5827 4 4.00098 7.58172 4.00098 12C4.00098 16.0796 7.05467 19.446 11.001 19.9381V14H9.00098V12H11.001V10.3458C11.001 9.00855 11.1402 8.52362 11.4017 8.03473C11.6631 7.54584 12.0468 7.16216 12.5357 6.9007C12.9184 6.69604 13.3931 6.57252 14.2227 6.51954C14.5519 6.49851 14.9781 6.52533 15.501 6.6V8.5H15.001C14.0837 8.5 13.7052 8.54332 13.4789 8.66433C13.3386 8.73939 13.2404 8.83758 13.1653 8.97793C13.0443 9.20418 13.001 9.42853 13.001 10.3458V12H15.501L15.001 14H13.001V19.9381ZM12.001 22C6.47813 22 2.00098 17.5228 2.00098 12C2.00098 6.47715 6.47813 2 12.001 2C17.5238 2 22.001 6.47715 22.001 12C22.001 17.5228 17.5238 22 12.001 22Z"></path></svg>'),auto;
+    font-weight: 600;
+    color: whitesmoke;
+}
+.abt>ul>li>.ri-youtube-line:hover{
+    cursor:url('data:image/svg+xml;utf8,  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19.6069 6.99482C19.5307 6.69695 19.3152 6.47221 19.0684 6.40288C18.6299 6.28062 16.501 6 12.001 6C7.50098 6 5.37252 6.28073 4.93225 6.40323C4.68776 6.47123 4.4723 6.69593 4.3951 6.99482C4.2863 7.41923 4.00098 9.19595 4.00098 12C4.00098 14.804 4.2863 16.5808 4.3954 17.0064C4.47126 17.3031 4.68676 17.5278 4.93251 17.5968C5.37252 17.7193 7.50098 18 12.001 18C16.501 18 18.6299 17.7194 19.0697 17.5968C19.3142 17.5288 19.5297 17.3041 19.6069 17.0052C19.7157 16.5808 20.001 14.8 20.001 12C20.001 9.2 19.7157 7.41923 19.6069 6.99482ZM21.5442 6.49818C22.001 8.28 22.001 12 22.001 12C22.001 12 22.001 15.72 21.5442 17.5018C21.2897 18.4873 20.547 19.2618 19.6056 19.5236C17.8971 20 12.001 20 12.001 20C12.001 20 6.10837 20 4.39637 19.5236C3.45146 19.2582 2.70879 18.4836 2.45774 17.5018C2.00098 15.72 2.00098 12 2.00098 12C2.00098 12 2.00098 8.28 2.45774 6.49818C2.71227 5.51273 3.45495 4.73818 4.39637 4.47636C6.10837 4 12.001 4 12.001 4C12.001 4 17.8971 4 19.6056 4.47636C20.5505 4.74182 21.2932 5.51636 21.5442 6.49818ZM10.001 15.5V8.5L16.001 12L10.001 15.5Z"></path></svg>'),auto;
+    font-weight: 600;
+    color: white;
+}
+.abt>ul>li>.ri-telegram-line:hover{
+    cursor:url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12.001 20C16.4193 20 20.001 16.4183 20.001 12C20.001 7.58172 16.4193 4 12.001 4C7.5827 4 4.00098 7.58172 4.00098 12C4.00098 16.4183 7.5827 20 12.001 20ZM12.001 22C6.47813 22 2.00098 17.5228 2.00098 12C2.00098 6.47715 6.47813 2 12.001 2C17.5238 2 22.001 6.47715 22.001 12C22.001 17.5228 17.5238 22 12.001 22ZM8.89113 13.1708L6.39308 12.3911C5.85317 12.2255 5.84996 11.854 6.51397 11.5871L16.247 7.82754C16.8115 7.59644 17.1325 7.88842 16.9495 8.61641L15.2917 16.4377C15.1763 16.9941 14.8407 17.1266 14.3759 16.8698L11.825 14.9823L10.6361 16.1297C10.5139 16.2476 10.4145 16.3489 10.2273 16.3743C10.04 16.3996 9.88564 16.3442 9.77337 16.0337L8.90378 13.1628L8.89113 13.1708Z"></path></svg>'),auto;
+    font-weight: 600;
+    color: whitesmoke;
+}
